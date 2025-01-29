@@ -1,0 +1,237 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    background: linear-gradient(145deg, #e8f5e9, #c8e6c9);
+    color: #2d3436;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+
+.hero{
+  width: 200px; /* Adjust the size as needed */
+  height: 200px;
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.7), 0 0 60px rgba(0, 255, 255, 0.7);
+  transition: box-shadow 0.1s ease-in-out
+}
+
+.hero:hover {
+  box-shadow: 0 0 5px cyan,  0 0 25px cyan,
+  0 0 50px rgb(7, 9, 23), 0 0 100px rgb(11, 10, 41);
+}
+
+
+/* Anchor Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #ecf0f1;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    background-color: #3498db;
+    transform: translateY(-3px);
+}
+
+/* Sections */
+/* Sections */
+section {
+    padding: 100px 20px;
+    text-align: center;
+    margin-top: 70px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.05); /* Apply a slight zoom-in effect */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    position: relative;
+    display: inline-block;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section h2:hover {
+    transform: scale(1.1); /* Slightly zoom-in when hovering over the heading */
+}
+
+section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #636e72;
+    background: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(5px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section p:hover {
+    transform: translateY(-5px); /* Move the paragraph slightly upwards on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15); /* Enhance the shadow */
+}
+
+
+/* Project Section */
+.project {
+    background: #ffffff;
+    color: #2c3e50;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project h3 {
+    color: #2c3e50;
+}
+
+/* Buttons */
+button,
+.links a {
+    display: inline-block;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover,
+.links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Form */
+.contact-form{
+    position: relative;
+    text-align: center;
+  }
+  
+  .contact-form form input,form textarea {
+    border: none;
+    outline: none;
+    width: 60%;
+    padding: 10px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .contact-form textarea{
+    resize: none;
+    height: 220px;
+  }
+
+  .linked{
+    font-size: medium;
+    display: inline-flex;
+    margin-left: 40%;
+  }
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    header nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header nav ul li {
+        margin: 5px;
+    }
+}
